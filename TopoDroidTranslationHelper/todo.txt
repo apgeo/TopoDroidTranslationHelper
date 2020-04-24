@@ -1,0 +1,9 @@
+la inaintare tdls trebuie sarit peste UNUSED si altele
+selectia din codul sursa XML nu corespunde cu selectia reala in unele cazuri
+arata string original in engleza din strins.xml implicit
+optiune marcare fisier ca tradus
+statistici (la romana lipsesc 5)
+
+
+la salvare se strica formatarea sursei XML initiale si dispare alinierea ex:
+<string name="button_plot"    >Schi?a</string>
