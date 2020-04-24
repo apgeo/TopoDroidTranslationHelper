@@ -278,7 +278,7 @@ namespace TopoDroidTranslationHelper
                 return;
             }
 
-            if (selectedTDLanguage.IsModified && MessageBox.Show("The current language is not saved. Are you sure you want to change language? Changes will be lost.", GlobalContext.ApplicationTitle, MessageBoxButtons.OKCancel) != DialogResult.OK)
+            if ((selectedTDLanguage != null) && selectedTDLanguage.IsModified && MessageBox.Show("The current language is not saved. Are you sure you want to change language? Changes will be lost.", GlobalContext.ApplicationTitle, MessageBoxButtons.OKCancel) != DialogResult.OK)
                 return;
 
             LanguageSelectorForm lsForm = new LanguageSelectorForm();
