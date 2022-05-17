@@ -230,7 +230,10 @@ namespace TopoDroidTranslationHelper
                             catch (System.Xml.XmlException xmlExMultipleNodes)
                             {
                                 if (xmlExMultipleNodes.Message.Contains("There are multiple root elements") ||
-                                    xmlExMultipleNodes.Message.Contains("Unexpected end of file has occurred"))
+                                    xmlExMultipleNodes.Message.Contains("Unexpected end of file has occurred") ||
+                                    
+                                    // <string name="info_volume_value">P. %1$.0f m&#00b3; C. %2$.0f m&#00b3;</string>
+                                    xmlExMultipleNodes.Message.Contains("Invalid syntax for a decimal numeric entity reference."))
                                     continue;
                                 else
                                     throw;
